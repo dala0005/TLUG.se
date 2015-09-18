@@ -3,11 +3,8 @@
 	<h3>
 		<span id="icon_start_page" class="glyphicon glyphicon-home" title="Startsida"></span>
 		<span id="icon_news_page" class="glyphicon glyphicon-globe" title="Nyheter"></span>
-		<span id="icon_archive_page" class="glyphicon glyphicon-folder-open" title="Arkiv"></span>
-		<span id="icon_manual_page" class="glyphicon glyphicon-book" title="Manual"></span>
 		<span id="icon_contact_page" class="glyphicon glyphicon-envelope" title="Kontakta styrelsen"></span>
 		<span id="icon_member_page" class="glyphicon glyphicon-user" title="Medlem"></span>
-		<span id="icon_donate_page" class="glyphicon glyphicon-usd" title="Donera"></span>
 		<?php
 		if(isset($_SESSION['member'])){
 			if($_SESSION['member']['login'] == 'true'){
@@ -27,8 +24,8 @@
 			if(isset($_SESSION['current_page'])){
 				$current_color = "#E0E0E0";
 				$not_current_color = "#333333";
-				$current_pages = array("start_page", "news_page", "archive_page", "manual_page", "contact_page", "member_page", "donate_page", "post_news_page", "member_list_page", "log_off_page");
-				$icon_ids = array("#icon_start_page", "#icon_news_page", "#icon_archive_page", "#icon_manual_page", "#icon_contact_page", "#icon_member_page", "#icon_donate_page", "#icon_post_news_page", "#icon_member_list_page", "#icon_log_off_page");
+				$current_pages = array("start_page", "news_page", "contact_page", "member_page", "post_news_page", "member_list_page", "log_off_page");
+				$icon_ids = array("#icon_start_page", "#icon_news_page", "#icon_contact_page", "#icon_member_page", "#icon_post_news_page", "#icon_member_list_page", "#icon_log_off_page");
 				for($i = 0; $i < count($current_pages); $i++){
 					if($_SESSION['current_page'] == $current_pages[$i]){
 						echo '<script>';

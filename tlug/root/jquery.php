@@ -10,16 +10,6 @@ $(document).ready(function(){
 		 window.location.replace("/nyheter");
 	});
 
-	$("#icon_archive_page").click(function(){
-		 $.post("../change_page.php", {current_page: "archive_page"});
-		 window.location.replace("/arkiv");
-	});
-
-	$("#icon_manual_page").click(function(){
-		 $.post("../change_page.php", {current_page: "manual_page"});
-		 window.location.replace("/manual");
-	});
-
 	$("#icon_contact_page").click(function(){
 		 $.post("../change_page.php", {current_page: "contact_page"});
 		 window.location.replace("/kontakta");
@@ -28,11 +18,6 @@ $(document).ready(function(){
 	$("#icon_member_page").click(function(){
 		 $.post("../change_page.php", {current_page: "member_page"});
 		 window.location.replace("/medlem");
-	});
-
-	$("#icon_donate_page").click(function(){
-		 $.post("../change_page.php", {current_page: "donate_page"});
-		 window.location.replace("/donera");
 	});
 
 	$("#icon_post_news_page").click(function(){
@@ -114,33 +99,6 @@ $(document).ready(function(){
 	$("tr.clickable-row").click(function(){
 		window.document.location = $(this).data("href");
 	});
-
-	$(window).scroll(function() {
-    if($(this).scrollTop()>265){
-        $('div#nav_meny').css({'position': 'fixed', 'top': '0px', 'align': 'center'}); 
-        // instead of alert you can use to show your ad
-        // something like $('#footAd').slideup();
-    }
-    if ($(this).scrollTop() < 100 && $('div#nav_meny').css('position') == 'fixed')
-  		{
-    		$('div#nav_meny').css({'position': 'none', 'top': '256px'}); 
-  		} 
-
-	});
-	//$(window).scroll(function(e){ 
-  		//$el = $('div#nav_meny'); 
-  		//if ($(this).scrollTop() > 2 /*&& $el.css('position') != 'fixed'*/){
-  		//	alert('Nu är du över gränsen'); 
-    		//$($el).css({'position': 'fixed', 'top': '0px'}); 
-  		//}
-  		/*
-  		if ($(this).scrollTop() < 265 && $el.css('position') == 'fixed')
-  		{
-    		$($el).css({'position': 'none', 'top': '0px'}); 
-  		} 
-  		*/
-	//});
-
 
 });
 </script>

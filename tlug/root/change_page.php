@@ -13,16 +13,6 @@
 			}
 			break;
 
-			case 'archive_page':{
-				$_SESSION['current_page'] = 'archive_page';
-			}
-			break;
-
-			case 'manual_page':{
-				$_SESSION['current_page'] = 'manual_page';
-			}
-			break;
-
 			case 'contact_page':{
 				$_SESSION['current_page'] = 'contact_page';
 			}
@@ -30,11 +20,6 @@
 
 			case 'member_page':{
 				$_SESSION['current_page'] = 'member_page';
-			}
-			break;
-
-			case 'donate_page':{
-				$_SESSION['current_page'] = 'donate_page';
 			}
 			break;
 

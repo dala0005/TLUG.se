@@ -15,16 +15,6 @@ if(isset($_SESSION['current_page'])){
 		}
 		break;
 
-		case 'archive_page': {
-			header('Location: ./arkiv');
-		}
-		break;
-
-		case 'manual_page': {
-			header('Location: ./manual');
-		}
-		break;
-
 		case 'contact_page': {
 			header('Location: ./kontakta');
 		}
@@ -32,11 +22,6 @@ if(isset($_SESSION['current_page'])){
 
 		case 'member_page': {
 			header('Location: ./medlem');
-		}
-		break;
-
-		case 'donate_page': {
-			header('Location: ./donera');
 		}
 		break;
 
